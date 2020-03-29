@@ -1,8 +1,9 @@
 footer {
-  height: 80px;
-  line-height: 80px;
-  background-color: black;
-  color: white;
+  --footerHeight: 80px;
+  height: var(--footerHeight);
+  line-height: var(--footerHeight);
+  background-color: #222;
+  color: #bbb;
   font-size: 14px;
   text-align: center;
   /* font-weight: bold; */
@@ -10,4 +11,14 @@ footer {
 
 footer span > span {
   font-size: 10px;
+}
+
+@media (max-width: 640px) {
+  footer {
+    font-size: 12px;
+  }
+
+  footer span > span {
+    font-size: 9px;
+  }
 }

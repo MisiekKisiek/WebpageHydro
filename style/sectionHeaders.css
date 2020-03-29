@@ -1,12 +1,15 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Trade Winds', cursive; */
 
-section+section {
+section + section {
   min-height: 100vh;
   --h1Height: 150px;
 }
+section:nth-of-type(5) {
+  min-height: calc(100vh - (160px));
+}
 
-section+section h1 {
+section + section h1 {
   height: var(--h1Height);
   text-align: center;
   /* background-color: #222;
@@ -15,7 +18,7 @@ section+section h1 {
   color: white;
 }
 
-section+section h1 p {
+section + section h1 p {
   line-height: var(--h1Height);
   opacity: 0;
   transition: 2s;
@@ -25,26 +28,26 @@ section+section h1 p {
   font-size: 30px;
 }
 
-section+section h1 p.active {
+section + section h1 p.active {
   opacity: 1;
 }
 
 @media (max-width: 758px) {
-  section+section {
+  section + section {
     --h1Height: 100px;
   }
 
-  section+section h1 p {
+  section + section h1 p {
     font-size: 25px;
   }
 }
 
 @media (max-width: 758px) and (orientation: landscape) {
-  section+section {
+  section + section {
     --h1Height: 70px;
   }
 
-  section+section h1 p {
+  section + section h1 p {
     font-size: 25px;
   }
 }
