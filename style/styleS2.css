@@ -1,0 +1,148 @@
+.s2 {
+  background-color: #eee;
+}
+
+.s2 .wrap {
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.s2 .wrap h2 {
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 1px solid #222;
+}
+
+.s2 .wrap .examples {
+  display: flex;
+  flex-direction: row;
+}
+
+.s2 .wrap .examples .left {
+  flex-basis: 50%;
+}
+
+.s2 .wrap .examples .right {
+  flex-basis: 50%;
+}
+
+.s2 .wrap .examples article {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  margin: 0 60px 0px 60px;
+  margin-top: 0px;
+  /* border-bottom: 1px solid #222; */
+  cursor: default;
+  transition: transform 0.5s, left 1.5s, right 1.5s, opacity 3.5s;
+}
+
+/* UNVISIBLE POSITION ARTICLE */
+.s2 .wrap .examples .left article {
+  position: relative;
+  left: -500px;
+  opacity: 0;
+}
+
+.s2 .wrap .examples .right article {
+  position: relative;
+  left: 500px;
+  opacity: 0;
+}
+
+/* VISIBLE POSITION ARTICLE */
+.s2 .wrap .examples .left article.active {
+  left: 0px;
+  opacity: 1;
+}
+
+.s2 .wrap .examples .right article.active {
+  left: 0px;
+  opacity: 1;
+}
+
+.s2 .wrap .examples .right article:first-child {
+  margin-top: 150px;
+}
+/*  */
+
+.s2 .wrap article > p:first-child {
+  flex-basis: 20%;
+  color: #69ee;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.s2 .wrap article section {
+  flex-basis: 80%;
+}
+
+.s2 .wrap article section h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.s2 .wrap article section p {
+  text-align: justify;
+}
+@media (min-width: 1024px) {
+  .s2 .wrap article:hover {
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+}
+
+@media (max-width: 1024px) {
+  .s2 .wrap .examples .right article:first-child {
+    margin-top: 0;
+  }
+  .s2 .wrap .examples article {
+    min-height: 360px;
+  }
+  .s2 .wrap .examples article > p {
+    padding-top: 0px;
+  }
+  .s2 .wrap article:first-child > p {
+    padding-top: 30px;
+  }
+  .s2 .wrap article section h3 {
+    font-size: 18px;
+  }
+  .s2 .wrap article section p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 640px) {
+  .s2 .wrap .examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .s2 .wrap .examples .left,
+  .s2 .wrap .examples .right {
+    width: 80%;
+    min-width: 300px;
+  }
+  .s2 .wrap .examples article {
+    min-height: auto;
+    margin: 30px 20px 0px 20px;
+  }
+
+  .s2 .wrap .examples article:first-child {
+    margin-top: 0;
+  }
+  .s2 .wrap h2 {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+}
