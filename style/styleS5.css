@@ -1,0 +1,10 @@
+.s5 .container {
+  min-height: 100%;
+}
+
+.s5 .info span {
+  font-size: 20px;
+}
+.s5 ..form span {
+  font-size: 18px;
+}

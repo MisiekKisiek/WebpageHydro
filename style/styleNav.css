@@ -27,7 +27,7 @@ nav .burger {
   display: none;
   position: absolute;
   right: 35px;
-  top: 25px;
+  top: 20px;
   font-size: 30px;
 }
 
@@ -72,7 +72,7 @@ nav ul li a {
   line-height: 40px;
   margin: 20px auto;
   font-weight: 500;
-  text-decoration: none;
+  /* text-decoration: none; */
   text-align: center;
   letter-spacing: 1px;
   color: #888;
@@ -91,6 +91,7 @@ nav ul li a::after {
 
 nav ul li a:hover {
   color: #6997bf;
+  text-decoration: none;
 }
 
 nav ul li a:hover::after {
@@ -206,7 +207,7 @@ nav ul li a:hover::after {
   }
 
   nav .burger {
-    top: 18px;
+    top: 15px;
     right: 32px;
   }
 }

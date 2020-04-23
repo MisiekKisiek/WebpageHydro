@@ -1,0 +1,5 @@
+.s3 .aboutMe .personImage img {
+  /* position: absolute; */
+  max-width: 100%;
+  min-height: 100%;
+}
